@@ -1,0 +1,25 @@
+var main_8c =
+[
+    [ "ADC_SCALE", "main_8c.html#abd4b7f2b9b32ee682855abc35921dec1", null ],
+    [ "CONVERSION", "main_8c.html#a9cdb55ce1eab5896b1989eb1be52aa69", null ],
+    [ "DEGREE_CONVERSION", "main_8c.html#a574b3c5895a19bef0275ed1036cf0c22", null ],
+    [ "MAX_DUTY_CYCLE_VALUE", "main_8c.html#aa888af165b0060d17a7577bd03fb1802", null ],
+    [ "Error_Handler", "main_8c.html#a1730ffe1e560465665eb47d9264826f9", null ],
+    [ "HAL_TIM_PeriodElapsedCallback", "group___t_i_m___exported___functions___group9.html#ga8a3b0ad512a6e6c6157440b68d395eac", null ],
+    [ "main", "main_8c.html#a840291bc02cba5474a4cb46a9b9566fe", null ],
+    [ "MX_ADC1_Init", "main_8c.html#aaa163e37853e6fc971474824d9f655ca", null ],
+    [ "MX_DMA_Init", "main_8c.html#a608dc9e9bcaf978f1611f3ec57670f64", null ],
+    [ "MX_GPIO_Init", "main_8c.html#ae89fdd15729ad41a66911190fcbab23a", null ],
+    [ "MX_TIM2_Init", "main_8c.html#af952250b2d49718b385e14a76fa7c1b8", null ],
+    [ "MX_TIM3_Init", "main_8c.html#a73ff2ff527606fb2be261e9f85aab83c", null ],
+    [ "MX_TIM4_Init", "main_8c.html#aa33f0698b12657979eb254584682d30d", null ],
+    [ "SystemClock_Config", "main_8c.html#a70af21c671abfcc773614a9a4f63d920", null ],
+    [ "hadc1", "main_8c.html#a22b804736f5648d52f639b2647d4ed13", null ],
+    [ "hdma_adc1", "main_8c.html#a1c126854bb1813d31ab4776b21dcc51f", null ],
+    [ "hora_string", "main_8c.html#afdaf56ec8d1f4d9842b214c7188fa700", null ],
+    [ "htim2", "main_8c.html#a2c80fd5510e2990a59a5c90d745c716c", null ],
+    [ "htim3", "main_8c.html#aac3d2c59ee0e3bbae1b99529a154eb62", null ],
+    [ "htim4", "main_8c.html#a85788cec5a97ee377e4ee2e74f026484", null ],
+    [ "t", "main_8c.html#a8c916e772de92782455c9352cf1fe180", null ],
+    [ "tm", "main_8c.html#a2182a1f5ef743c17d71096c490feb801", null ]
+];
