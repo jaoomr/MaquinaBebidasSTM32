@@ -60,7 +60,7 @@ Qualquer outro código - "Erro na Leitura!" aparece no LCD.
 
 Estrutura da máquina:
 
-![Diagrama](https://github.com/jaoomr/MaquinaBebidasSTM32/Images/estrutura.png)
+![Diagrama](https://github.com/jaoomr/MaquinaBebidasSTM32/blob/master/Images/montagem.jpg)
 
 Módulos:
 Core.c - Possui o leitor de tipo de bebida e o preparador de cada tipo de bebida
@@ -72,4 +72,4 @@ LCD.c - Possui a biblioteca para escrita no LCD, com alguns caracteres especiais
 
 Documentação:
 
-[Documentação](https://github.com/jaoomr/MaquinaBebidasSTM32/ProjetoFinal/html/index.html)
+[Documentação](https://github.com/jaoomr/MaquinaBebidasSTM32/blob/master/ProjetoFinal/html/index.html)
