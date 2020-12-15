@@ -43,18 +43,6 @@ void add_water(int time, int type){ // Type 0 - Natural, Type 1 - Quente, Type 2
 }
 
 void add_co2(int time){
-	int press_co2=1;
-	press_co2 = HAL_GPIO_ReadPin(GPIOC, PRESS_CO2_Pin);
-	if(press_co2==0){
-		LCD_Clear();
-		LCD_String_xy(1,3,"Sem CO2 no");
-		LCD_String_xy(2,3,"reservatório");
-		while(1){
-			HAL_Delay(4000);
-			press_co2 = HAL_GPIO_ReadPin(GPIOC, PRESS_CO2_Pin);
-			if(press_co2) break;
-		}
-	}
 	LCD_String_xy(2,2,"Adic. CO2...");
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_SET);
 	HAL_Delay(time);

@@ -1,5 +1,5 @@
 modules.c:22:6:add_water	16	static
-modules.c:45:6:add_co2	24	static
-modules.c:64:6:heater	48	static
-modules.c:104:6:cooler	48	static
-modules.c:144:6:HAL_ADC_ConvCpltCallback	16	static
+modules.c:45:6:add_co2	16	static
+modules.c:52:6:heater	48	static
+modules.c:92:6:cooler	48	static
+modules.c:132:6:HAL_ADC_ConvCpltCallback	16	static

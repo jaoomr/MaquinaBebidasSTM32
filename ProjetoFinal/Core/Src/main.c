@@ -88,6 +88,7 @@ int main(void)
   uint8_t opt_reader1, opt_reader2, opt_reader3;
   uint8_t type_of_drink;
   uint8_t confirm, cancel;
+  uint8_t press_co2=1;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -131,6 +132,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
 while(1){
+		begin:
 		HAL_Delay(100);
 		sprintf(hora_string, "%02d:%02d:%02d", tm.tm_hour, tm.tm_min, tm.tm_sec);
 		LCD_String_xy(1,4,hora_string);
@@ -144,7 +146,10 @@ while(1){
 			while(1){
 				HAL_Delay(4000);
 				press_water = HAL_GPIO_ReadPin(GPIOC, PRESS_WATER_Pin);
-				if(press_water) break;
+				if(press_water) {
+					LCD_Clear();
+					break;
+				}
 			}
 		}
 		else if(read){ // Se for colocado uma cápsula
@@ -158,6 +163,23 @@ while(1){
 				LCD_Clear();
 			}
 			else{ // Se for um tipo válido...
+				if(type_of_drink==5 || type_of_drink==2){
+					press_co2 = HAL_GPIO_ReadPin(GPIOC, PRESS_CO2_Pin);
+					if(press_co2==0){
+						LCD_Clear();
+						LCD_String_xy(1,3,"Sem CO2 no");
+						LCD_String_xy(2,3,"reservatório");
+						while(1){
+							HAL_Delay(4000);
+							press_co2 = HAL_GPIO_ReadPin(GPIOC, PRESS_CO2_Pin);
+							if(press_co2) {
+								LCD_Clear();
+								break;
+							}
+						}
+						goto begin;
+					}
+				}
 				confirm = 0;
 				while(1){
 					confirm = HAL_GPIO_ReadPin(GPIOB, CONFIRM_Pin); // Espera confirmação ou cancelamento
